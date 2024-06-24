@@ -7,7 +7,7 @@ const app: Application = express();
 
 const PORT: number | string = process.env.PORT || 8080;
 
-require('./model/db.connection');
+require('./database/db.connection');
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');

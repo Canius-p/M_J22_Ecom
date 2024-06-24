@@ -16,26 +16,26 @@ import {
 })
 class User extends Model {
   @Column({
-    PrimaryKey: true,
+    primaryKey: true,
     type: DataType.UUID,
     defaultValue: DataType.UUIDV4,
   })
   declare id: string;
-
   @Column({
     type: DataType.STRING,
     allowNull: false,
-    primaryKey: true,
-  })
-  declare id: string;
-
-  @Column({
-    type: DataType.STRING,
   })
   declare email: string;
 
   @Column({
     type: DataType.STRING,
   })
+  declare username: string;
+
+  @Column({
+    type: DataType.STRING,
+  })
   declare password: string;
 }
+
+export default User;
