@@ -8,7 +8,7 @@ const sequelize = new Sequelize({
   port: Number(process.env.DB_PORT),
   dialect: 'mysql',
   logging: false,
-  models: [__dirname + '/src/model'],
+  models: [__dirname + '/models'],
 });
 
 sequelize
